@@ -1,0 +1,42 @@
+{{ partial "header.html" . }}
+
+<div class="grid-container">
+  <div class="grid-item">
+    <h1 class="index-header">Index</h1>
+    {{ .Content }}
+    <p>A moth hoping to love something other than light?</p>
+    <p>
+      <img class="svg-image-2" src="/img/hollow_flag.svg" />
+      <img class="svg-image-2" src="/img/addition.svg" />
+      <img
+        class="svg-image-2"
+        style="height: 80px; position: relative; top: 10px; margin-left: -5px"
+        src="/img/orbit.svg"
+      />
+    </p>
+  </div>
+  {{ range.Data.Pages }}
+  <article class="post-snippet grid-item">
+    <h2>{{ .Title}}</h2>
+    <ul>
+      {{ range.Pages.ByDate }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{end}}
+    </ul>
+  </article>
+  {{ end }}
+  <div class="grid-item">
+    <h2>Photography</h2>
+    <p>
+      <a href="https://twitter.com/empathy2000">Link</a>
+    </p>
+  </div>
+  <div class="grid-item">
+    <h2>Twitter</h2>
+    <p>
+      <a href="https://twitter.com/empathy2000">Link</a>
+    </p>
+  </div>
+</div>
+
+{{ partial "footer.html" . }}

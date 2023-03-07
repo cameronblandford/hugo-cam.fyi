@@ -1,0 +1,23 @@
+baseURL = 'http://cam.fyi/'
+languageCode = 'en-us'
+title = 'cam.fyi'
+theme = 'my-theme'
+
+[menu]
+  [[menu.main]]
+    identifier = "essays"
+    name = "Essays"
+    url = "/essays"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "missives"
+    name = "Missives"
+    url = "/missives"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "poems"
+    name = "Poems"
+    url = "/poetry"
+    weight = 30
