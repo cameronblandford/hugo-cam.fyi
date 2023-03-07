@@ -1,10 +1,10 @@
 ---
-title: "Four - Horror"
+title: "Four"
 date: 2022-04-14
 draft: false
 ---
 
-fourth missive - good horror
+good horror
 
 good horror does the same thing to my brain that music for airports 1/1 by brian eno does to my brain
 
