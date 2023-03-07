@@ -1,7 +1,7 @@
 ---
-title: "Short Poems"
+title: "A palette"
 date: 2021-04-02
-draft: true
+draft: false
 ---
 
 short poems - windowlatch

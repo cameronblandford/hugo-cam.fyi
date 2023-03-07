@@ -1,7 +1,7 @@
 ---
 title: "Seven"
 date: 2022-04-18
-draft: true
+draft: false
 ---
 
 seventh missive - sculpture garden

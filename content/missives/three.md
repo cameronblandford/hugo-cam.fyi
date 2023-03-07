@@ -1,7 +1,7 @@
 ---
 title: "Three"
 date: 2019-12-20
-draft: true
+draft: false
 ---
 
 third missive - launch site

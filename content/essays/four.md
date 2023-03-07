@@ -1,7 +1,7 @@
 ---
-title: "Four"
+title: "Four - Horror"
 date: 2022-04-14
-draft: true
+draft: false
 ---
 
 fourth missive - good horror

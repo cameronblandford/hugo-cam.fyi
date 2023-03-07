@@ -1,7 +1,7 @@
 ---
 title: "Two"
 date: 2019-11-14
-draft: true
+draft: false
 ---
 
 second missive - redistribution center
