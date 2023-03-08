@@ -39,6 +39,26 @@
             changeVar('--color-link-visited', themes[str].linkVisitedColor)
         }
     }
+
+    const intoThePit = () => {
+        const oldValue = document.getElementById('pit').value;
+        document.getElementById('pit').value='*breathing in*';
+        setTimeout(() => {
+            document.getElementById('pit').value=`${oldValue.toUpperCase()}`;
+        }, 600);
+        setTimeout(() => {
+            document.getElementById('pit').value='you open your eyes';
+        }, 1800);
+        setTimeout(() => {
+            document.getElementById('pit').value='you open your eyes again';
+        }, 2200);
+        setTimeout(() => {
+            document.getElementById('pit').value='wind rushing in your ears';
+        }, 2600);
+        setTimeout(() => {
+            document.getElementById('pit').value='';
+        }, 3400);
+    }
 </script>
 </body>
 </html>
