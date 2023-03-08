@@ -41,22 +41,24 @@
     }
 
     const intoThePit = () => {
-        const oldValue = document.getElementById('pit').value;
-        document.getElementById('pit').value='*breathing in*';
+        const thePit = document.getElementById('pit');
+        const oldValue = thePit.value;
+        thePit.value='*breathing in*';
         setTimeout(() => {
-            document.getElementById('pit').value=`${oldValue.toUpperCase()}`;
+            thePit.value=`${oldValue.toUpperCase()}`;
         }, 600);
         setTimeout(() => {
-            document.getElementById('pit').value='you open your eyes';
+            thePit.value='you open your eyes';
         }, 1800);
         setTimeout(() => {
-            document.getElementById('pit').value='you open your eyes again';
+            thePit.value='you open your eyes again';
         }, 2200);
         setTimeout(() => {
-            document.getElementById('pit').value='wind rushing in your ears';
+            thePit.value='wind thrushing against your warm ears';
         }, 2600);
         setTimeout(() => {
-            document.getElementById('pit').value='';
+            thePit.value='';
+            // thePit.parentElement.style.visibility = 'hidden';
         }, 3400);
     }
 </script>
