@@ -27,8 +27,8 @@
   --color-header: var(--color-black);
   --color-body: var(--color-black);
   --color-bg: var(--color-psychokiller);
-  --color-link: var(--color-navy);
-  --color-link-visited: var(--color-link);
+  --color-link: var(--color-lava);
+  --color-link-visited: var(--color-olive);
 }
 
 .index-header {
@@ -62,7 +62,6 @@
 
 .grid-item {
   padding: 12px;
-  /* border: 0.5px solid #aaa; */
   background: var(--color-bg);
 }
 .grid-item-disclaimer {
@@ -122,11 +121,19 @@ li {
   max-height: 95vh;
   max-width: 100%;
   height: 75vh;
+
   width: auto;
   display: inline;
 }
+
+@media (max-width: 500px) {
+  .portfolio-image {
+    height: auto;
+    margin-bottom: 20vh;
+  }
+}
+
 .portfolio-image-wrapper {
-  margin-bottom: 20vh;
   /* width: 100%; */
   display: inline;
 }

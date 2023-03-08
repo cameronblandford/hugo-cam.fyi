@@ -1,8 +1,6 @@
-{{ partial "header.html" . }}
-<div>test</div>
-{{ $completeAssetPath := printf "%s" "/?*.*" | printf "%s%s"
-.Params.assets_folder | printf "%s" }} {{ $images := resources.Match
-$completeAssetPath}}
+{{ partial "header.html" . }} {{ $completeAssetPath := printf "%s" "/?*.*" |
+printf "%s%s" .Params.assets_folder | printf "%s" }} {{ $images :=
+resources.Match $completeAssetPath}}
 <div style="max-width: 100%">
   <h1>{{.Title}}</h1>
   {{ .Content }}{{ range $images }} {{ $image := resources.Get .Name }} {{ with
