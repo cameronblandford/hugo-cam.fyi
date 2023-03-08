@@ -7,7 +7,28 @@
   --color-greenery: #6ab03f;
   --color-ruby: #e8303b;
   --color-aqua: #5cddd5;
+  --color-black: #333;
   --color-blacker: #000;
+  --color-psychokiller: #fafafa;
+  --color-white: #fff;
+
+  /* floral summer */
+  --color-lava: #fd7b35;
+  --color-fire: #ed5402;
+  --color-lisbon: #f3b53e;
+  --color-brick: #983601;
+  --color-olive: #5c6804;
+  --color-leaf: #8ca001;
+  --color-summer-grass: #d4c40c;
+  --color-summer-black: #0c092d;
+  --color-sand: #fad49e;
+  --color-pale-skin: #ffe4bd;
+
+  --color-header: var(--color-black);
+  --color-body: var(--color-black);
+  --color-bg: var(--color-psychokiller);
+  --color-link: var(--color-navy);
+  --color-link-visited: var(--color-link);
 }
 
 .index-header {
@@ -66,8 +87,23 @@ h2 {
 }
 
 body {
-  background: #fafafa;
-  color: #333;
+  background: var(--color-bg);
+  color: var(--color-body);
+}
+
+body h1,
+body h2,
+body h3 {
+  color: var(--color-header);
+}
+
+a,
+a:active {
+  color: var(--color-link);
+}
+
+a:visited {
+  color: var(--color-link-visited);
 }
 
 ul {

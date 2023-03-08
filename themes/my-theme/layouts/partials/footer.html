@@ -1,4 +1,44 @@
+<footer style="position: fixed; right: 8px; bottom: 8px">
+    <button onclick="setTheme('themeSummer')">summer</button>
+</footer>
 
 </main>
+<script>
+    const changeVar = (variable, otherVariable) => {
+        const r = document.querySelector(':root');
+        const rs = getComputedStyle(r);
+        r.style.setProperty(variable, rs.getPropertyValue(otherVariable))
+    }
+
+    const theme90s = {
+        bgColor: '--color-goldenrod',
+        headerColor: '--color-ruby',
+        bodyColor: '--color-navy'
+    }
+
+    const themeSummer = {
+        bgColor: '--color-pale-skin',
+        headerColor: '--color-fire',
+        bodyColor: '--color-olive',
+        linkColor: '--color-fire',
+        linkVisitedColor: '--color-lava'
+    }
+
+    const themes = {
+        theme90s,
+        themeSummer
+    }
+    
+
+    const setTheme = (str) => {
+        if (themes[str]) {
+            changeVar('--color-header', themes[str].headerColor);
+            changeVar('--color-bg', themes[str].bgColor);
+            changeVar('--color-body', themes[str].bodyColor);
+            changeVar('--color-link', themes[str].linkColor)
+            changeVar('--color-link-visited', themes[str].linkVisitedColor)
+        }
+    }
+</script>
 </body>
 </html>
