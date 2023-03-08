@@ -6,18 +6,13 @@ printf "%s%s" .Params.assets_folder | printf "%s"}}
   {{ .Content }} {{ $images := resources.Match $completeAssetPath}} {{ range
   $images }} {{ $image := resources.Get .Name }} {{ with $image }}
   <div class="portfolio-image-wrapper">
-    <img class="portfolio-image" srcset=" {{ (.Resize "320x").RelPermalink }}
+    <img
+      class="portfolio-image"
+      srcset=' {{ (.Resize "320x").RelPermalink }}
     320w, {{ (.Resize "600x").RelPermalink }} 600w, {{ (.Resize
-    "1200x").RelPermalink }} 2x" src="{{ (.Resize "600x").RelPermalink }}" />
-    {{/*
-    <div class="image-meta">
-      {{ with .Exif }} {{ with .Tags.Model }} {{ . }} {{ end }} {{ with
-      .Tags.FocalLength }}@ {{ . }}mm {{ end }} {{ with .Tags.ExposureTime }}
-      &mdash; {{ . }} sec {{ end }} {{ with .Tags.FNumber }} , &fnof;/ {{ . }}
-      {{ end }} {{ with .Tags.ISOSpeedRatings }}, ISO {{ . }} {{ end }} {{ end
-      }}
-    </div>
-    */}}
+    "1200x").RelPermalink }} 2x'
+      src='{{ (.Resize "600x").RelPermalink }}'
+    />
   </div>
   {{ end }} {{end}}
 </div>
